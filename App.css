@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'SpaceGrotesk-variable';
+  src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format("truetype");
+}
+body{
+  background-color:white;
+  font-size: 18px;
+  font-family: SpaceGrotesk-variable;
+  font-weight: 500;
+}
+#card-back, #card-front, #card-logo,#name-on-card,#numbers-on-card,#date-on-card,#cvc-on-card,#cvc-error-msg,#completed-state{
+  position: absolute;
+}
+#card-back, #card-front{
+  width:397px;
+  height: 219;
+
+}
+
+#card-back{
+  left:10rem;
+  top:23rem;
+}
+#card-front{
+  top:6rem;
+  left:5rem;
+}
+#main-desktop{
+  width: 350px;
+}
+#card-logo{
+  top:7rem;
+  left:7rem;
+  
+}
+#entire-screen{
+  display: grid;
+  grid-template-columns: auto 373px;
+  gap:20rem;
+}
+#numbers-on-card{
+  /*border:solid blue;*/
+  left: 7rem;
+  top: 13rem;
+  
+  
+}
+#form{
+  /*border:solid blue;*/
+  height:350px;
+  margin-top:10rem;
+}
+#date-and-cvc, #grid-inputs{
+  display:grid;
+}
+#date-and-cvc{
+  grid-template-columns: auto auto;
+}
+#grid-inputs{
+  grid-template-columns: auto auto auto;
+  margin-top:-15px;
+}
+
+#text{
+  margin-bottom:-0.5px;
+}
+.black{
+  color:black;
+}
+#month, #year{
+  width:66px;
+}
+#cvc{
+  width: 175px;
+}
+#submit , #card-number, #card-holder{
+ 
+  width:98%;
+}
+#submit{
+ background-color: #220930;
+ margin-top:25px;
+}
+#name-on-card{
+  /*border:solid orange;*/
+  width:auto;
+  height:auto;
+  top:16rem;
+  left: 6.5rem;
+  font-size: 15px;
+  z-index: 1;
+}
+#date-on-card{
+  /*border:solid orange;*/
+  width:auto;
+  height:auto;
+  top:17.3rem;
+  left: 25rem;
+  font-size: 13px;
+
+}
+#cvc-on-card{
+  z-index: 1;
+  /*border:solid orange;*/
+  height:auto;
+  width:auto;
+  top:29rem;
+  left: 30.5rem;
+  font-size: 13px;
+  
+}
+.error-msg{
+  /*border:solid blue;*/
+  width: 9rem;
+  height: 11px;
+  font-size: 9px;
+  color: red;
+}
+#cvc-error-msg{
+  /*border:solid blue;*/
+  right: 8rem;
+  bottom: 8.6rem;
+  z-index: 1;
+
+}
+#completed-state{
+  /*border:solid red;*/
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 20rem;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+  left: 42rem;
+  top: 8rem;
+  
+}
+.completed-state-text{
+  color:black;
+}
+#completed-state-button{
+  width: 100%;
+  
+}
+#icon-complete{
+  width: 3rem;
+}
+#gray-text{
+  color: gray;
+}
